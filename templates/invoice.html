@@ -1,0 +1,8 @@
+<h2>Invoice</h2>
+<p>Customer: {{ invoice.customer }}</p>
+<p>Product: {{ invoice.product }}</p>
+<p>GST: ₹{{ invoice.gst }}</p>
+<h3>Total: ₹{{ invoice.total }}</h3>
+
+<button onclick="window.print()">Print Invoice</button>
+<a href="/dashboard">New Invoice</a>
