@@ -104,7 +104,6 @@ def generate_pdf(invoice):
 
 # ================= MAIN =================
 
-if __name__ == "__main__":
     with app.app_context():
         db.create_all()
 
@@ -113,6 +112,7 @@ if __name__ == "__main__":
             admin = User(username="admin", password="admin")
             db.session.add(admin)
             db.session.commit()
-
+if _name_== "_main_":
     app.run(host="0.0.0.0", port=10000)
+
 
